@@ -1,4 +1,5 @@
 <?php
+//TODA LA DOCUMENTACIÓN EN https://www.php.net/docs.php
 //comentario de una linea
 
 /*comentarios
