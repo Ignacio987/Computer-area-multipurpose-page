@@ -1,5 +1,5 @@
 <?php
-//VALORES DE SELECT OPTION
+//VALORES DE TEXTAREA
 //el objetivo es entender como se envia la información a través del formulario
 
 $txtNombre ="";    
@@ -7,8 +7,9 @@ $rdgLenguaje = "";
 $chekphp = "";
 $chekhtml= "";
 $chekcss= "";
-     
-$Película = "";   //se crea la variable donde se almacenará el valor de select
+$Película = "";
+
+$txtComentario ="";                                                                 //se almacena el texto en una variable
 
 
 if ($_POST){                                                            
@@ -17,9 +18,10 @@ if ($_POST){
     $chekphp = (isset($_POST["chekphp"]) =="si" )?"checked":"";
     $chekhtml = (isset($_POST["chekhtml"]) =="si" )?"checked":"";
     $chekcss = (isset($_POST["chekcss"]) =="si" )?"checked":"";
+    $Película = (isset($_POST["Película"]))?$_POST["Película"]:"";
 
-    $Película = (isset($_POST["Película"]))?$_POST["Película"]:""; //condicion que guarda el valor de película y lo muestra, en caso de no
-                                                                   //recibir valor deja un espacio en blanco y sin información
+    $txtComentario = (isset($_POST["txtComentario"]))?$_POST["txtComentario"]:"";     //si llegó un valor a la variable, mostrar esta misma
+                                                                                      //en caso de que no, imprimir un valor vacío.
 }
 
 ?>
@@ -39,12 +41,14 @@ if ($_POST){
     <?php echo ($chekphp=="checked")?"php":"";?>       
     <?php echo ($chekhtml=="checked")?"html":"";?> 
     <?php echo ($chekcss=="checked")?"css":"";?> <br>
+    <strong>la película que te gusta es </strong>           
+    <?php echo $Película;?> <br>
 
-    <strong>la película que te gusta es </strong>           <!--imprime el valor de Select que hayamos elegido-->
-    <?php echo $Película;?> 
+    <strong>la duda que tienes es: </strong>           
+    <?php echo $txtComentario;?>             <!--imprime el texto que hayamos escrito-->
     <?php } ?>                                                   
 
-    <form action="ejercicio31-4.php" method="post">
+    <form action="ejercicio31-5.php" method="post">
 
     nombre: <br>
     <input value="<?php echo $txtNombre; ?>" type="text" name="txtNombre" id="">
@@ -59,18 +63,21 @@ if ($_POST){
     <br> html: <input type="checkbox" <?php echo $chekhtml;?> name="chekhtml" value="si" id=""> <br>
     <br> css: <input type="checkbox" <?php echo $chekcss;?> name="chekcss" value="si" id=""> <br>
 
-    ¿Qué película te gusta?<!--se llama con un select--> <br> 
+    ¿Qué película te gusta? <br> 
     <select name="Película" id="">
         <option value="">[Ninguna Película]</option>
         <option value="Harry Potter" <?php echo ($Película =="Harry Potter")?"selected":""; ?> >Harry Potter</option>
         <option value="Wanted" <?php echo ($Película =="Wanted")?"selected":""; ?> >Wanted</option>
         <option value="The Invitation" <?php echo ($Película =="The Invitation")?"selected":""; ?> >The Invitation</option>
     </select> <br>
+
+    ¿Tienes alguna duda?<!--se llama con textarea--><br>
+    <textarea name="txtComentario" id="" cols="30" rows="10"><?php echo $txtComentario;?> </textarea>
+    <br>
     <!--
-    -select es una barra de la que se despliegan opciones, se puede elegir una de ellas
-    -echo ($Película =="Wd")?"selected":""; nos sirve para almacenar la opción seleccionada, al recargar la página no debería cambiar
+    -textarea es un espacio en el que se puede escribir
+    -echo $txtComentario; nos sirve para almacenar la opción seleccionada, al recargar la página no debería cambiar
     -->
- 
     <br> <input type="submit" value="Enviar información">
     </form>
 </body>
