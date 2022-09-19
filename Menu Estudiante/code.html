@@ -1,0 +1,179 @@
+<html lang="en">
+    <!-- Cabeza de la pag -->
+    <head>
+        <meta charset="UTF-8"/>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title> C A M P</title>
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+        <!-- Estilos basicos -->
+        <style>
+
+            @font-face {
+                font-family: "contrax";
+                src: url(Fuentes/contrax.ttf);
+            }
+
+            #logNav{
+                
+                width: 120;
+                height: 40;
+            }
+
+
+            #navText{
+                position: relative;
+                text-align: center;
+                width: 700px;
+                top: 7px;
+                color: white;
+                font-family: contrax;
+            } 
+
+            #btnNotAsis{
+
+                position: relative;
+                top: 22px;
+            }
+
+            #btnDoc{
+
+                position: relative;
+                top: 45px;
+            }
+
+        </style>
+
+    </head>
+
+    <!-- Cuerpo de la pag -->
+
+    <body>
+
+        <!-- "Barra superior" -->
+
+        <nav class="navbar bg-warning t">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <a class="navbar-brand">
+                            <img id="logNav" src="imagenes/logoUni.png" alt="Bootstrap">        
+                        </a>
+                    </div>
+
+                    <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                        <p id="navText">Bienvenido a Computer Area Multipropuse Page</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contenido principal de la pagina -->
+
+        <form>
+
+            <div class="container my-5">
+
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+                        <!-- información académica -->
+
+                        <div id="infAcademica" class="card border-info" style="width: 18rem;">                   
+                            <div class="card-body">
+                                <h5 class="card-title">Información Académica</h5>
+                                <p class="card-text">En esta sección se encuentra información sobre los cursos inscritos, aprobados, reprobados, competencias genéricas y créditos de libre disposición.</p>
+                                <a  href="#" class="btn btn-primary">Ver inf. académica</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Solicitud de nota P -->
+
+                        <div id="solNotaP" class="card border-info my-5" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Solicitud de Nota P</h5>
+                                <p class="card-text">La "Nota P" es la calificación <br> usada en una cierta asignatura <br> cuando no ha sido posible cumplir <br> con la evaluación final del curso <br> dentro de los plazos establecidos <br> en el Calendario Académico.</p>
+                                <a id="btnSolNotP" href="#" class="btn btn-primary">Ver sol. de nota P</a>
+                            </div>
+                        </div>
+
+                        <!-- Cuenta Corriente -->
+
+                        <div id="Docum" class="card border-info my-5" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Cuenta Corriente</h5>
+                                <p class="card-text">En esta sección encontrarás información de tus cuentas (Deudas, Pagarés, cuotas, etc) y beneficios (Becas y/o Créditos) que posees en la Universidad Católica de Temuco.</p>
+                                <a id="btnCuentCorr" href="#" class="btn btn-primary">Ver cuenta corriente</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fila en el lugar medio -->
+
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+                        <!-- Notas parciales y asistencias -->
+
+                        <div id="NotAsist" class="card border-info" style="width: 18rem; height: 15rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Notas y Asistencias</h5>
+                                <p class="card-text">En esta sección encontrarás las notas parciales que has adquirido en cada semestre y los porcentajes de asistencia obtenido carreras.</p>
+                                <a id="btnNotAsis" href="#" class="btn btn-primary">Ver notas y asist.</a>
+                            </div>
+                        </div>
+
+                        <!-- Solicitudes Estudiantes -->
+
+                        <div id="Soli" class="card border-info my-5" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Solicitudes Estudiantes</h5>
+                                <p class="card-text">En esta sección encontrarás el formulario mediante el cual pu-<br>edes hacer una solicitud de Reinc-<br>orporación, Suspensión o Renuncia. <br> Además puedes consultar el estado <br> en que se encuentra tu solicitud.</p>
+                                <a id="btnSol" href="#" class="btn btn-primary">Ver Solicitudes</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Fila derecha -->
+
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+                    <!-- Certificación académica -->
+
+                        <div id="certAcad" class="card border-info" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Certificación Académica</h5>
+                                <p class="card-text">En esta sección encontrarás información sobre la certificación académica: Sobre los cursos disponibles para la certificacion, formulario de postulacion.</p>
+                                <a id="btnCertAcad" href="#" class="btn btn-primary">Ver cert. académica</a>
+                            </div>
+                        </div>
+
+                        <!-- Documentos -->
+
+                        <div id="Docum" class="card border-info my-5" style="width: 18rem; height: 16.5rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Documentos</h5>
+                                <p class="card-text">en esta sección podras generar tus distintos certificados en caso de que los necesites al igual que ver formularios.</p>
+                                <a id="btnDoc" href="#" class="btn btn-primary">Ver documentos</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+            
+                </div>
+            
+            </div>
+
+        </form>
+
+    </body>
+
+
+</html>
