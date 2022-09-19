@@ -1,74 +1,134 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="container">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          <span class="fs-4">Simple header</span>
-        </a>
-  
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        </ul>
-      </header>
-    </div>
-    <main>
-      <div class="row ">
-        <div class="col-md-6 container" id="Historia">
-          <div class="row justify-content-center">
-            <h2 class="col-4">Historia Académica</h2>
-          </div>
-          <br>
-          <div class="row justify-content-center">
-            <h4 class="col-4">Datos Personales</h4>
-          </div>
-          <div class="row justify-content-center" id="info_est">
-            <div class="card mb-3 col-4" style="width: 80%;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg" class="img-fluid rounded-start" alt="profiles">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap" />
+        </svg>
+        <span class="fs-4">Simple header</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul>
+    </header>
+  </div>
+  <main>
+    <div class="row ">
+      <div class="col-md-6 container" id="Historia">
+        <div class="row justify-content-center">
+          <h2 class="col-4">Historia Académica</h2>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+          <h4 class="col-4">Datos Personales</h4>
+        </div>
+        <div class="row justify-content-center" id="info_est">
+          <div class="card mb-3 col-4" style="width: 80%;">
+            <div class="row g-0">
+              <div class="col-md-4" style="width:20% ;">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg"
+                  class="img-fluid rounded-start" alt="profiles">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body row">
+                  <div class="col-4">
                     <h5 class="card-title">Nombre del Alumno</h5>
                     <p class="card-text">Pipo ramirez gonzales</p>
+
+                  </div>
+                  <div class="col-4">
                     <h5 class="card-title">Rut del Alumno</h5>
                     <p class="card-text">12.345.678-0</p>
+                  </div>
+                  <div class="col-4">
                     <h5 class="card-title">Correo</h5>
                     <p class="card-text">abcde@gmail.com</p>
+
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
-          <div id="info_carre">
-
+        </div>
+        <br>
+        <div  class="row justify-content-center" id="info_carre">
+          <div class="row justify-content-center">
+            <h4 class="col-4">Datos de Carrera</h4>
           </div>
-          <div id="extras_ops">
-
+          <div class="card mb-3 col-4" style="width: 80%;">
+            <div class=" card-body">
+              <div class="conteiner row">
+                <div class="col-md-6" id="nombre_carre" >
+                  <h5 class="card-title">Nombre de la carrera</h5>
+                  <p class="card-text">Ingenieria civil informática</p>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title">Id de carrera</h5>
+                  <p class="card-text">154</p>
+                </div>
+              </div>
+              <br>
+              <div class="conteiner row">
+                <div class="col-md-3" id="nombre_carre" >
+                  <h5 class="card-title">Plan</h5>
+                  <p class="card-text">3</p>
+                </div>
+                <div class="col-md-3">
+                  <h5 class="card-title">Ingreso</h5>
+                  <p class="card-text">2022</p>
+                </div>
+                <div class="col-md-3">
+                  <h5 class="card-title">Registro</h5>
+                  <p class="card-text">2022011775</p>
+                </div>
+                <div class="col-md-3">
+                  <h5 class="card-title">Situacion</h5>
+                  <p class="card-text">Regular</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div id="extras_ops" style="width:80%;">
+          <div class="container" style="width: 80%;">
+            <button class="btn btn-primary " type="submit">Avance Curricular</button>
+            <button class="btn btn-primary " type="submit">Historia Académica (PDF)</button>
           </div>
 
         </div>
-        <div class="col-md-6" id="Cursos_">
-          check
-        </div>
+
       </div>
-    </main>
-    <footer>
+      <div class="col-md-6" id="Cursos_">
+        check
+      </div>
+    </div>
+  </main>
+  <footer>
 
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  </body>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
