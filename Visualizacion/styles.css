@@ -1,0 +1,39 @@
+* {
+    width: 99%;
+    background: #91BFBC;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.Titulo {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Parrafo {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.Solicitud {
+    text-align: center;
+    font-size: 28px;
+}
+
+.Inf {
+    background-color: #41635E;
+    text-align: center;
+    font-size: 24px;
+}
+
+.Tabla th {
+    background-color: #41635E;
+    width: 20%;
+}
+
+.Tabla {
+    background-color: #6B8C83;
+    width: 50%;
+}
+
