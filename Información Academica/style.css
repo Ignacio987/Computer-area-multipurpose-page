@@ -1,5 +1,24 @@
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
 
+:root{
+  --verde-opaco: #38534f;
+  --verde-suave: #6b8c83;
+  --celeste: #91bfbc;
+  --gris: #d2dcd3;
+  --azul-grisaceo: #738a90;
 
+}
+
+html{
+  max-width: 100%;
+}
+main{
+  background:  linear-gradient(356deg, rgba(210,220,211,1) 0%, rgba(145,191,188,1) 100%);
+  color: #41635e;
+}
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -51,3 +70,17 @@
     -webkit-overflow-scrolling: touch;
   }
 
+.titulo h1,.titulo h4{
+  text-align: center;
+}
+
+.card,.list-group,#tabla{
+  background: var(--verde-opaco)transparent !important;
+  color: var(--verde-opaco) !important;
+  border: solid 1px white !important;
+
+}
+.list-group-item{
+  background-color: transparent  !important;
+  border: transparent !important;
+}
