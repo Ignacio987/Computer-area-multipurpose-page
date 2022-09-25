@@ -6,7 +6,7 @@
 <title>Ejercicio CSS</title>
 <link rel="stylesheet" href="est.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+<script src="script.js"></script>
 </head>
 
 
@@ -92,13 +92,11 @@
                 <div class = "bot">
                     <!-- Boton -->
 
-                    <input class="butt" type = "submit" value="Ingresar">
-                    <p class="warnings" id="warnings"></p>
+                    <input class="butt" type = "submit" onclick="valid_est();" value="Ingresar" >
                 </div>
                 
                 
             </form>
-        <script src="veri_est.js"></script>
 
  
         </div>
@@ -127,7 +125,7 @@
             <div class = "correoD">
 
                 <label for="correo"></label>
-                <input id="mail_doc" type = "text" placeholder="Correo">
+                <input id="mail_doc" type = "email" placeholder="Correo">
 
             </div>
 
@@ -144,13 +142,9 @@
 
             <div class ="botonD">
 
-                <input class="butt" type = "submit" value="Ingresar" >
-                <p class="warnings" id="warnings2"></p>
-
+                <input class="butt" type = "submit" onclick="valid_doc();" value="Ingresar"  >
             </div>
-            
         </form>
-        <script src="very_doc.js"></script>
     </section>
 
 </body>

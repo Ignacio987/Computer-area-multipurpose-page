@@ -211,6 +211,21 @@ img.izquierda {
 
 }
 
+.correoD input[type="email"] {
+
+    font-size: 23px;
+    font-family: "conthrax";
+    color: white;
+    position: relative;
+    bottom: 370px;
+    left: 950px;
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 11%;
+
+}
+
 
 .cont input[type="password"] {
 
@@ -338,14 +353,17 @@ img.izquierda {
 .warnings {
     text-align: center;
     color: red;
-    position: fixed;
+    position: relative;
+
 }
 
 #warnings {
-    left: 950px;
+    left: 700px;
+    position: relative;
+    z-index: 3;
 
 }
 
 #warnings2 {
-    left: 700px;
+    left: 950px;
 }

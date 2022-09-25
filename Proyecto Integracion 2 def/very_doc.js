@@ -1,9 +1,9 @@
 
-const rud_doc = document.getElementById("rud_doc")
-const mail_doc = document.getElementById("mail_doc")
-const passw_doc = document.getElementById("passw_doc")
-const form_doc = document.getElementById("form_doc")
-const parrafo_doc = document.getElementById("warnings2")
+let rud_doc = document.getElementById("rud_doc")
+let mail_doc = document.getElementById("mail_doc")
+let passw_doc = document.getElementById("passw_doc")
+let form_doc = document.getElementById("form_doc")
+let parrafo_doc = document.getElementById("warnings2")
 
 
 if (form_doc){
