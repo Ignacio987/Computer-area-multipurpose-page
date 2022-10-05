@@ -42,6 +42,8 @@
                             <li class="nav-item"><a href="#" class="nav-link">Menu Estudiante</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Notas parciales</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                            <li class="nav-item"><h5 style="color: white;">Nombre:</h5></li>
+                            <li class="nav-item" ><h5 style="color: white;"id="nombre"></h5></li>
                           </ul>
                       </div>
                   </div>
@@ -61,8 +63,8 @@
                     <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Seleccionar Curso
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <li><a class="dropdown-item" href="#">III1: Curso 1</a></li>
+                    <ul class=" dropdown-menu" id="cursos_disp" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" onclick="secccion(id)" href="#">III1: Curso 1</a></li>
                       <li><a class="dropdown-item" href="#">III2: Curso 2</a></li>
                       <li><a class="dropdown-item" href="#">III3: Curso 3</a></li>
                       <li><a class="dropdown-item" href="#">III4: Curso 4</a></li>
@@ -79,7 +81,7 @@
                   <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Seleccionar Seccion
                   </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <ul class="dropdown-menu" id="secciones" aria-labelledby="dropdownMenuButton">
                     <li><a class="dropdown-item" href="#">Seccion 1</a></li>
                     <li><a class="dropdown-item" href="#">Seccion 2</a></li>
                     <li><a class="dropdown-item" href="#">Seccion 3</a></li>
@@ -108,7 +110,7 @@
                   <th scope="col">Nota 5</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="alumnos">
                 <tr>
                   <th scope="row">1</th>
                   <td>NOMBRE NOMBRE APELLDIDO APELLIDO</td>
@@ -133,7 +135,7 @@
                   <td>6,5</td>
                   <td>6,5</td>
                 </tr>
-                <tr>
+                <tr id="notas_edit">
                   <th scope="row">3</th>
                   <td>NOMBRE NOMBRE APELLDIDO APELLIDO</td>
                   <td>
@@ -175,6 +177,7 @@
       <br>
       <br>
     </main>
+    <script src="script.js"></script>
 
     <footer>
       <!-- Footer -->
