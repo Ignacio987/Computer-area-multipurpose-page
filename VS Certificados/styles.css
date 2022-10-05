@@ -1,0 +1,31 @@
+* {
+    width: 99%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+   background: linear-gradient(aqua, #6B8C83);
+   height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.panel {
+    margin-bottom: 20px;
+    border: 1px solid cadetblue;
+    border-radius: 4px;
+    height: 130px;
+    width: 400px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightskyblue;
+}
+
+.tit {
+    text-align: center;
+}
