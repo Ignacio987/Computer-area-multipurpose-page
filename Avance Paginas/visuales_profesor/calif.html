@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMP: Calificaciones y Asistencia</title>
+    <link rel="stylesheet" href="style_calif.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+
+
+
+        #navText{
+            color: white;
+        } 
+        #nave{
+          background: rgba(22,38,55,1);
+          border-left: solid 20px yellow;
+        }
+        
+        #botonfooter{
+
+          object-position: "center";
+
+        }
+      
+      </style>
+          
+          <header>
+            <nav class="navbar t shadow" id="nave">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <a class="navbar-brand">
+                              <img  style="width:200px;" id="logNav" src="logoUni.png" alt="Bootstrap">        
+                          </a>
+                      </div>
+                      <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8 row justify-content-center">
+                        <div class="row">
+                          <h6 class="my-3" style="text-align: center; width: 650px; font-size: 18px;" id="navText">Bienvenido a Computer Area Multipropuse Page Administration</h6>
+                         
+                        </div> 
+                        
+                      </div>
+                      
+                  </div>
+                  
+              </div>
+              
+            </nav>
+            
+          </header>
+          
+
+
+    <main>
+        <div id="calificaciones" class="container">
+
+          <div class="container">
+            
+            
+            <div id="botonfooter" class="row mx-5">
+              <ul class="nav nav-pills col-auto">
+                <a class="btn btn-primary mx-3" href="#" role="button">Adm. de Calf. y Asist.</a>
+                <a class="btn btn-primary" href="#" role="button">Adm. Horario</a>
+                <a class="btn btn-primary mx-3" href="#" role="button">Adm. General</a>
+               
+             </ul>
+            </div>
+
+          </div>
+          
+
+          <br>
+          <h1 style="text-align:center;">Administración de Calificaciones</h1>
+          <br>
+          <div class="row">
+
+
+            <div class="col">
+                <h4>Elegir Curso</h4>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Curso
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">III1: Curso 1</a></li>
+                      <li><a class="dropdown-item" href="#">III2: Curso 2</a></li>
+                      <li><a class="dropdown-item" href="#">III3: Curso 3</a></li>
+                      <li><a class="dropdown-item" href="#">III4: Curso 4</a></li>
+                      <li><a class="dropdown-item" href="#">III5: Curso 5</a></li>
+                      <li><a class="dropdown-item" href="#">III6: Curso 6</a></li>
+                      <li><a class="dropdown-item" href="#">III7: Curso 7</a></li>
+                      <li><a class="dropdown-item" href="#">III8: Curso 8</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row my-2">
+              <div class="col" >
+                <h4>Elegir Sección</h4>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sección
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Seccion 1</a></li>
+                      <li><a class="dropdown-item" href="#">Seccion 2</a></li>
+                      <li><a class="dropdown-item" href="#">Seccion 3</a></li>
+                    </ul>
+                </div>
+              </div>
+
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+
+
+          <div class="row card shadow" style="padding: 10px;">
+            <table class="table card-body">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  
+                  <th scope="col" colspan="2 ">
+                    <input type="search" id="form1" class="form-control" placeholder="buscar alumno" />
+                  </th>
+                  <th scope="col">Nota 1</th>
+                  <th scope="col">Nota 2</th>
+                  <th scope="col">Nota 3</th>
+                  <th scope="col">Nota 4</th>
+                  <th scope="col">Nota 5</th>
+                </tr>
+              </thead>
+
+
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>NOMBRE SEGNOMBRE APELLIDO APELLIDOM</td>
+                  <td>
+                    <div class="btn btn-primary">editar</div> 
+                  </td>
+                  <td>6,5</td>
+                  <td>6,5</td>
+                  <td>6,5</td>
+                  <td>6,5</td>
+                  <td>6,5</td>
+                </tr>
+            
+
+                <tr>
+                  <th scope="row">2</th>
+                  <td>NOMBRE SEGNOMBRE APELLIDO APELLIDOM</td>
+                  <td>
+                    <div class="btn btn-primary">editar</div> 
+                  </td>
+                  <td>6,5</td>
+                  <td>6,3</td>
+                  <td>6,5</td>
+                  <td>6,5</td>
+                  <td>6,5</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>NOMBRE SEGNOMBRE APELLIDO APELLIDOM</td>
+                  <td>
+                    <div class="btn btn-primary">Guardar</div> 
+                  </td>
+
+
+                  <td>
+
+                    <div class="form-outline">
+                      <input type="text" id="form12" class="form-control" value="none" />
+                    </div>
+
+                  </td>
+                  <td>
+                    <div class="form-outline">
+                      <input type="text" id="form12" class="form-control" value="none" />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-outline">
+                      <input type="text" id="form12" class="form-control" value="none" />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-outline">
+                      <input type="text" id="form12" class="form-control" value="none" />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-outline">
+                      <input type="text" id="form12" class="form-control" value="none" />
+                    </div>
+                  </td>
+              </tbody>
+            </table>
+          </div>
+
+          
+
+
+          <!-- ASISTENCIA -->
+
+
+          <p></p> <!-- Salto de linea -->
+          <p></p> <!-- Salto de linea -->
+          <p></p> <!-- Salto de linea -->
+          <p></p> <!-- Salto de linea -->
+          <p></p> <!-- Salto de linea -->
+          <p></p> <!-- Salto de linea -->
+          <h1 style="text-align:center;">Administración de Asistencias</h1>
+          <p></p> <!-- Salto de linea -->
+          <p></p> <!-- Salto de linea -->
+          
+
+          <div class="row">
+            <div class="col">
+                <h4>Elegir Curso</h4>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Curso
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">III1: Curso 1</a></li>
+                      <li><a class="dropdown-item" href="#">III2: Curso 2</a></li>
+                      <li><a class="dropdown-item" href="#">III3: Curso 3</a></li>
+                      <li><a class="dropdown-item" href="#">III4: Curso 4</a></li>
+                      <li><a class="dropdown-item" href="#">III5: Curso 5</a></li>
+                      <li><a class="dropdown-item" href="#">III6: Curso 6</a></li>
+                      <li><a class="dropdown-item" href="#">III7: Curso 7</a></li>
+                      <li><a class="dropdown-item" href="#">III8: Curso 8</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row my-2">
+              <div class="col" >
+                <h4>Elegir Sección</h4>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sección
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Seccion 1</a></li>
+                      <li><a class="dropdown-item" href="#">Seccion 2</a></li>
+                      <li><a class="dropdown-item" href="#">Seccion 3</a></li>
+                    </ul>
+                </div>
+              </div>
+
+          </div>
+          
+
+
+
+          <div class="row card shadow" style="padding: 10px;">
+            <table class="table card-body">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  
+                  <th scope="col" colspan="2 ">
+                    <input type="search" id="form1" class="form-control" placeholder="buscar alumno" />
+                  </th>
+                  <th scope="col">Fecha</th>
+                  <th scope="col">Hora Inicio</th>
+                  <th scope="col">Asistencia</th>
+                  
+                </tr>
+              </thead>
+
+
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>NOMBRE SEGNOMBRE APELLIDO APELLIDOM</td>
+                  <td>
+                    <div class="btn btn-primary">editar</div> 
+                  </td>
+                  <td>mañana</td>
+                  <td>1 de la mañana</td>
+                  <td>no vino</td>
+                </tr>
+            
+
+                <tr>
+                  <th scope="row">2</th>
+                  <td>NOMBRE SEGNOMBRE APELLIDO APELLIDOM</td>
+                  <td>
+                    <div class="btn btn-primary">editar</div> 
+                  </td>
+                  <td>ayer</td>
+                  <td>10:50</td>
+                  <td>ausente</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>NOMBRE SEGNOMBRE APELLIDO APELLIDOM</td>
+                  <td>
+                    <div class="btn btn-primary">Guardar</div> 
+                  </td>
+
+
+                  <td>
+
+                    <div class="form-outline">
+                      <input type="text" id="form12" class="form-control" value="none" />
+                    </div>
+
+                  </td>
+                  <td>
+                    <div class="form-outline">
+                      <input type="text" id="form12" class="form-control" value="none" />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-outline">
+                      <input type="text" id="form12" class="form-control" value="none" />
+                    </div>
+                  </td>
+                  <td>
+                    
+                    </div>
+                  </td>
+              </tbody>
+            </table>
+          </div>
+          
+
+        </div>
+      <br>
+      <br>
+    </main>
+    <br>
+    <br>
+    <br>
+    
+
+
+
+
+
+
+    <footer>
+      <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted ">
+    <br>
+    <br>
+    <!-- Section: Social media -->
+
+    <section >
+      <div class="container text-center text-md-start mt-5">
+
+        <!-- Grid row -->
+        <div class="row mt-3">
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              UNIVERSIDAD CATOLICA DE TEMUCO
+            </h6>
+            <p>
+              Somos la Universidad Católica de Temuco. 
+                      Institución de Educación Superior Acreditada perteneciente al Cruch con más de 60 años de tradición y compromiso público.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+        
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Rudecindo Ortega 2950, Temuco, Araucanía
+            </p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> (45) 220 5205</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="#">campuct.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+</html>
