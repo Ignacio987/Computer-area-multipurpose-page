@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      <title>C A M P - Documentos</title>
+
+      <style>
+
+        @font-face {
+          font-family: "contrax";
+          src: url(Fuentes/contrax.ttf);
+          }
+
+      </style>
+
+  </head>
+
+
+  <body>
+
+
+    <nav  class="navbar bg-warning t">
+
+      <div class="container">
+            
+        <img class="img-fluid" id="logouni" src="imagenes/logoUni.png" alt="Logo uct" width="100" height="34">
+        <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8"> 
+          <p class="my-2" id="navText" style="font-family: contrax; width: solid black;">Bienvenido a Computer Area Multipropuse Page</p>           
+              
+        </div>
+
+      </div> <!-- Cierre de container -->
+    </nav>
+
+        
+    <h1 class="my-5" style="font-family: contrax; text-align: center;">Documentos</h1>
+        
+    <div class="container"> 
+
+      <!-- Tabla inicial con información del estudiante -->
+
+      <div class="table-responsive my-5">
+        <table class ="table">
+          <!-- Cabeza de la tabla -->
+          <thead>
+            <tr>
+
+              <th>Nombre del estudiante</th>
+              <th>Rut</th>
+              <th>Año de ingreso</th>
+
+            </tr>
+          </thead>
+
+          <!-- Cuerpo de la tabla -->
+
+          <tbody>
+
+            <tr>
+              <td>Pedro Sanches</td>
+              <td>21.524.067-3</td>
+              <td>2022</td>
+            </tr>
+                
+          </tbody>
+        </table>
+
+      </div> <!-- Cierre de l atabla -->
+
+     
+
+      <!-- Acordion -->
+
+      <h3 style="text-align: center;">Certificados</h3>
+             
+      <!-- Certificado estudsiante regular -->
+
+      <div class="accordion my-5" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="True" aria-controls="panelsStayOpen-collapseOne">
+              Certificado Estudiante Regular
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+            <!-- Cuerpo de acordeon -->
+            <div class="accordion-body; container">
+
+              <br> <!-- Espacio -->
+
+              <h5>Selleciona los fines para el que desees el certificado:</h5>
+
+              <br> <!-- Espacio -->
+
+              <div class="row">
+                          
+                <div class=" my-2 col-md-4">
+
+                  <select class="form-select " aria-label="Default select example" style="width: 380px; align-items: center;">
+
+                    <option selected>Para fines que estime convenientes</option>
+                    <option value="1">Beneficios estudiantiles y asignación familiar</option>
+                    <option value="2">Seguro escolar</option>
+
+                  </select>
+                         
+                </div> <!-- Cierre de "col-md-4" -->
+
+                <div class=" my-2 col-md-4">
+
+                  <a class="mx-4 btn btn-primary" href="#" role="button">Descargar Certificado</a>
+
+                </div>
+
+                
+
+              </div> <!-- Cierre de "row" -->
+
+              <br> <!-- Espacio -->
+
+            </div> <!-- Cierre del acordeon -->
+
+          </div>
+
+        </div> <!-- Cierre del item acordeon --> 
+
+      
+
+        <!-- Certificado academico -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Certificado Académico
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <!-- Cuerpo de acordeon -->
+            <div class="accordion-body; container">
+          
+              <div class="row">
+                          
+                <div class=" my-5 col-md-4">
+                            
+                  <!-- eleccion check 1 -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Historia Académica
+                    </label>
+                  </div>
+      
+                  <!-- Eleccion check 2 -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Notas Periodo
+                    </label>
+                  </div>
+
+                </div> <!-- Cierre de "col-md-4" -->
+                       
+                <div class="my-4 col-md-4">
+                                
+                  <select class="form-select " aria-label="Default select example" style="width: 180px; align-items: center;">
+                    <option selected>Seleccione el año</option>
+                    <option value="1">2022</option>
+                  </select>
+
+                  <a class=" my-3 btn btn-primary" href="#" role="button">Descargar Certificado</a>
+
+                </div> <!-- Cierre de "col-md-4" -->
+
+              </div> <!-- Cierre de "row" --> 
+
+            </div> <!-- Cierre de acordeon --> 
+
+          </div>
+
+        </div> 
+
+        <!-- Certificado de conducta -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Certificado de Conducta
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <div class="row">
+
+                <div class="col-md-4">
+
+                  <br> <!-- Espacio -->
+                  <p> <strong>Sanciones:</strong> Durante su permanencia el(la) estudiante no tuvo sanciones disciplinarias por contravención al 
+                    Reglamento de Investigaciones Sumarias y Sumarios que instruyen a los Estudiantes de la Universidad Católica 
+                    de Temuco.
+                  </p>
+                  <p><strong>Observación:</strong> Sin observaciones</p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                  <br> <!-- Espacio -->
+                  <br> <!-- Espacio -->
+                  <a class="mx-5 my-4 btn btn-primary" href="#" role="button">Descargar Certificado</a>
+
+                </div>
+
+              </div> <!-- Cierre de row -->
+
+            </div> <!-- Cierre del cuerpo del acordeon -->
+
+          </div>
+
+        </div> <!-- Cierre del acordeon item -->
+
+        <!-- Certificado de permanencia -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+              Certificado de Permanencia
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body">
+
+              <div class="row">
+                <div class="col-md-4">
+                  
+                  <br> <!-- Espacio -->
+                  <p>Durante su permanencia el(la) estudiante no tuvo impedimentos académicos ni sanciones disciplinarias por 
+                    contravenir el Reglamento del Alumno Regular de la Universidad.
+                  </p>
+                  <br> <!-- Espacio -->
+
+                </div> <!-- Cierre de col-md-4 -->
+
+                <div class="col-md-4">
+
+                  <br> <!-- Espacio -->
+                  <a class="mx-5 my-4 btn btn-primary" href="#" role="button">Descargar Certificado</a>
+
+                </div>
+              </div> <!-- Cierre de row -->
+
+            </div> <!-- Cierre del cuerpo del acordeon -->
+
+          </div>
+
+        </div> <!-- Cierre de acordeon item -->
+           
+      </div> <!-- Cierre de acordeon principal -->
+
+    </div> <!-- Cierre de container -->
+
+    <div class="container">
+
+      <h3 style="text-align: center;">Convenio y Formulario</h3>
+
+      <div class="accordion my-5" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+              Convenio de Prestación de Servicios
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+            <div class="accordion-body">
+              <div class="row">
+
+                <div class="col-md-4">
+                  
+                  <br>
+                  <a class="mx-5 btn btn-primary" href="#" role="button">Descargar Convenio</a>
+                  <br>
+                  <br>
+
+                </div> <!-- Cierre de col-md-4 -->
+
+              </div> <!-- Cierre de row -->
+
+            </div> <!-- Cierre del cuerpo del acordeon -->
+
+          </div> 
+
+        </div> <!-- Cierre de acordeon item -->
+              
+           
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+              Formulario de Apelación para Causal de Eliminación 
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+            <div class="accordion-body">
+              
+              <div class="row">
+
+                <div class="col-md-4">
+
+                  <br>
+                  <p>Este formulario debe ser completado y entregado impreso en tu carrera.</p>
+                  <br>
+                </div> <!-- Cierre de col-md-4 -->
+
+                <div class="col-md-4">
+
+                  <br>
+                  <a class="mx-5 my-3 btn btn-primary" href="#" role="button">Descargar Formulario</a>
+
+                </div> <!-- Cierre de col-md-4 -->
+
+              </div> <!-- Cierre del Row -->
+
+            </div> <!-- Cierre del cuerpo del acordeon -->
+
+          </div>
+                
+        </div> <!-- Cierre del item acordeon -->
+
+      </div> <!-- Cierre de acordeon principal -->  
+
+    </div> <!-- Cierre de container -->
+
+  </body> <!-- Cierre de cuerpo -->
+
+</html>
