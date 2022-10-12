@@ -13,7 +13,7 @@ html, body {
     max-width: 100%;
   }
   main{
-    background:  linear-gradient(356deg, white 0%,  #3bc0fe 100%);
+    background-image: url("Logo_chico.webp"),linear-gradient(0deg, rgba(96,210,210,0.40238093528427) 0%, rgba(255,255,255,1) 100%);
     color: #000000;
   }
   .bd-placeholder-img {
@@ -74,11 +74,13 @@ html, body {
   .card,.list-group,#tabla{
     background: var(--verde-opaco)transparent !important;
     color: var(--verde-opaco) !important;
-    border: solid 1px #FEE03B !important;
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px !important;
   
   }
   .list-group-item{
     background-color: transparent  !important;
     border: transparent !important;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px !important;
   }
 
