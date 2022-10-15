@@ -5,52 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAMP: Calificaciones y Asistencia</title>
-    <link rel="stylesheet" href="style_calif.css">
+    <link rel="stylesheet" href="certificacion_style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 </head>
 <body>
-    <style>
+  <style>
 
 
 
-        #navText{
-            color: white;
-        } 
-        #nave{
-          background: rgba(22,38,55,1);
-          border-left: solid 20px yellow;
-        }
-        
-      
-      
-      </style>
-          <header>
-            <nav class="navbar t shadow" id="nave">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                          <a class="navbar-brand">
-                              <img  style="width:200px;" id="logNav" src="logoUni.png" alt="Bootstrap">        
-                          </a>
-                      </div>
-                      <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8 row justify-content-center">
-                          <h6 style="text-align: center;" id="navText">Bienvenido a Computer Area Multipropuse Page</h6>
-                          <ul class="nav nav-pills col-auto">
-                            <li class="nav-item"><a href="file:///C:/Users/alexi/Desktop/camp/Computer-area-multipurpose-page-main/Menu%20Estudiante/code.html" class="nav-link active" aria-current="page">Home</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Informacion Académica</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Menu Estudiante</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Notas parciales</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
-                            <li class="nav-item"><h5 style="color: white;">Nombre:</h5></li>
-                            <li class="nav-item" ><h5 style="color: white;"id="nombre"></h5></li>
-                          </ul>
-                      </div>
+    #navText{
+        color: white;
+    } 
+    #nave{
+      background: rgba(22,38,55,1);
+      border-left: solid 20px #EDC500;
+    }
+    #navy a{
+      color: white;
+    }
+    
+  
+  
+  </style>
+      <header>
+        <nav class="navbar t shadow" id="nave">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <a class="navbar-brand">
+                          <img  style="width:200px;" id="logNav" src="../imagenes/logoUni.png" alt="Bootstrap">        
+                      </a>
                   </div>
+                  <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8 row justify-content-center" style="margin-bottom: 10px;">
+                      <h6 style="text-align: center;" id="navText">Bienvenido a Computer Area Multipropuse Page</h6>
+                      <ul class="nav nav-pills col-auto gap-2" id="navy" >
+                        <li class="nav-item"><a href="file:///C:/Users/alexi/Desktop/camp/Computer-area-multipurpose-page-main/Menu%20Estudiante/code.html" class="nav-link active " aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Informacion Académica</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Menu Estudiante</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Notas parciales</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Menu</a></li>
+                      </ul>
+                  </div >
               </div>
-            </nav>
-      
-          </header>
+          </div>
+        </nav>
+  
+      </header>
     <main>
         <br><br>
         <h1 style="text-align:center ;">Obtén tu Certificado Académico</h1>
@@ -82,7 +84,7 @@
         </div>
         <br>
         <h4 style="text-align:center ;">Cert1</h4>
-        <div class="container">
+        <div class="container tabla" >
             <table class="table">
                 <thead>
                     <th>Sigla</th>
@@ -123,7 +125,7 @@
         </center>
         <br><br>
         <h3 style="text-align:center ;">Mis Solicitudes</h3>
-        <div class="container">
+        <div class="container tabla">
           <table class="table">
             <thead>
               <th> codigo solicitud</th>
@@ -159,11 +161,11 @@
           </form>
         </center>
 
-
+        <br><br>
     </main>
     <script src="certificacion_script.js"></script>
 
-    <footer style="margin-top: 200px;">
+    
       <!-- Footer -->
   <footer class="text-center text-lg-start bg-light text-muted">
     <br>

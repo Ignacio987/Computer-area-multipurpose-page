@@ -1,0 +1,26 @@
+main{
+    
+    background-image: url("../imagenes/Logo_chico.webp"),linear-gradient(0deg, rgba(96,210,210,0.40238093528427) 0%, rgba(255,255,255,1) 100%);
+
+    
+    
+    color:black;
+  }
+
+  .card,.list-group,.tabla{
+    background: #ffffff  !important;
+    color: rgb(19, 22, 34) !important;
+    border: solid 1px #ffffff  !important;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px !important;
+    padding: 20px;
+    border-radius: 15px;
+  
+  }
+  .list-group-item{
+    background-color: #63a1fd   !important;
+    border: transparent !important;
+  }
+
+  #notas{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px !important;
+  }

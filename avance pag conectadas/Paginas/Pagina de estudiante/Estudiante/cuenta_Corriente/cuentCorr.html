@@ -17,18 +17,6 @@
                 src: url(Fuentes/contrax.ttf);
             }
 
-
-            #navText{
-
-                color: white;
-                width: 600px;
-                position: relative;
-                text-align: center;
-                top: 9px;
-                font-family: "contrax";
-
-            }
-
             #textNot{
 
                 font-family: "contrax";
@@ -46,18 +34,48 @@
 
     <body>
 
-        <!-- Header -->
+      <style>
 
-        <nav  class="navbar bg-warning t">
-            <div class="container">
-              
-                <img id="logouni" src="imagenes/logoUni.png" alt="Logo uct" width="99" height="34">
-                <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8"> 
-                    <p id="navText">Bienvenido a Computer Area Multipropuse Page</p>           
-              
-                </div>
-            </div>
-        </nav>   
+
+
+        #navText{
+            color: white;
+        } 
+        #nave{
+          background: rgba(22,38,55,1);
+          border-left: solid 20px #EDC500;
+        }
+        #navy a{
+          color: white;
+        }
+        
+      
+      
+      </style>
+          <header>
+            <nav class="navbar t shadow" id="nave">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                          <a class="navbar-brand">
+                              <img  style="width:200px;" id="logNav" src="../imagenes/logoUni.png" alt="Bootstrap">        
+                          </a>
+                      </div>
+                      <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8 row justify-content-center" style="margin-bottom: 10px;">
+                          <h6 style="text-align: center;" id="navText">Bienvenido a Computer Area Multipropuse Page</h6>
+                          <ul class="nav nav-pills col-auto gap-2" id="navy" >
+                            <li class="nav-item"><a href="file:///C:/Users/alexi/Desktop/camp/Computer-area-multipurpose-page-main/Menu%20Estudiante/code.html" class="nav-link active " aria-current="page">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link active">Informacion Académica</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link active">Menu Estudiante</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link active">Notas parciales</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link active">Menu</a></li>
+                          </ul>
+                      </div >
+                  </div>
+              </div>
+            </nav>
+      
+          </header>
         
         
 
