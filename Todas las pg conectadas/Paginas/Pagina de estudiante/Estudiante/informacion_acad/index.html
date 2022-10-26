@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAMP:Información Académica</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+  <style>
+
+
+
+    #navText{
+        color: white;
+    } 
+    #nave{
+      background: rgba(22,38,55,1);
+      border-left: solid 20px #EDC500;
+    }
+    #navy a{
+      color: white;
+    }
+    
+  
+  
+  </style>
+      <header>
+        <nav class="navbar t shadow" id="nave">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <a class="navbar-brand">
+                          <img  style="width:200px;" id="logNav" src="logoUni.png" alt="Bootstrap">        
+                      </a>
+                  </div>
+                  <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8 row justify-content-center" style="margin-bottom: 10px;">
+                      <h6 style="text-align: center;" id="navText">Bienvenido a Computer Area Multipropuse Page</h6>
+                      <ul class="nav nav-pills col-auto gap-2" id="navy" >
+                        <li class="nav-item"><a href="file:///C:/Users/alexi/Desktop/camp/Computer-area-multipurpose-page-main/Menu%20Estudiante/code.html" class="nav-link active " aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Informacion Académica</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Menu Estudiante</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Notas parciales</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Menu</a></li>
+                      </ul>
+                  </div >
+              </div>
+          </div>
+        </nav>
+  
+      </header>
+  <main>
+    <br>
+    <br>
+    <div class=" shadow-sm row justify-content-center titulo">
+      <h1>Informacion Académica</h1>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <div class="row justify-content-center" id="info_est">
+          <div class="row justify-content-center titulo">
+            <h4 class="col-4">Datos Personales</h4>
+          </div>
+          <div class="shadow card mb-3 col-4" style="width: 94%;  ">
+            <div class="card-body">
+              <div class="conteiner row">
+                <div class="col">
+                  <h5 class="card-title">Nombre del Alumno</h5>
+                  <p class="card-text" id="nombre_a"></p>
+                </div>
+                <div class="col">
+                  <h5 class="card-title">Rut del Alumno</h5>
+                  <p class="card-text" id="rut_a"></p>
+                </div>
+                <div class="col">
+                  <h5 class="card-title">Correo</h5>
+                  <p class="card-text" id="correo_a"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class=" row justify-content-center" id="info_carre">
+          <div class="row justify-content-center">
+            <h4 class="col-4" style="text-align:center" >Datos de Carrera</h4>
+          </div>
+          <div class="shadow card mb-3 col-4" style="width: 94%; ">
+            <div class=" card-body">
+              <div class="conteiner row">
+                <div class="col-md-6" id="nombre_carre">
+                  <h5 class="card-title">Nombre de la carrera</h5>
+                  <p class="card-text" id="nombre_c"></p>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title">Id de carrera</h5>
+                  <p class="card-text" id="id_c"></p>
+                </div>
+              </div>
+              <br>
+              <div class="conteiner row">
+                <div class="col-md-3" id="nombre_carre">
+                  <h5 class="card-title">Plan</h5>
+                  <p class="card-text" id="plan"></p>
+                </div>
+                <div class="col-md-3">
+                  <h5 class="card-title">Ingreso</h5>
+                  <p class="card-text" id="ingreso"></p>
+                </div>
+                <div class="col-md-3">
+                  <h5 class="card-title">Registro</h5>
+                  <p class="card-text" id="registro"></p>
+                </div>
+                <div class="col-md-3">
+                  <h5 class="card-title">Situacion</h5>
+                  <p class="card-text" id="situacion"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+          <h4 class="title " style="text-align:center"> Cursos</h4>
+          <p class="" style="text-align:center">Seleccione el Curso para mas información</p>
+          <div class="shadow list-group" style="width: 90%;" id="cursos">
+            <!-- <a href="" class="list-group-item list-group-item-action">Curso 1</a>
+            <a href="" class="list-group-item list-group-item-action">Curso 2</a>
+            <a href="" class="list-group-item list-group-item-action">Curso 3</a>
+            <a href="" class="list-group-item list-group-item-action">Curso 4</a> -->
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <h4 style="text-align:center;">Informacion del Curso</h4>
+        <div class="shadow col-12 row justify-content-center">
+          <br>
+          <table class=" table mb-3 col-12 " id="tabla_c">
+            <!-- <tbody>
+              <tr>
+                <th scope="row">Año</th>
+                <td id="año">2022</td>
+              </tr>
+              <tr>
+                <th scope="row">Semestre</th>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">Siglas</th>
+                <td>INFO1121</td>
+              </tr>
+              <tr>
+                <th scope="row">Nombre Curso</th>
+                <td>CURSO 1</td>
+              </tr>
+              <tr>
+                <th scope="row">Seccion</th>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">Créditos</th>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th scope="row">Tipo</th>
+                <td>Min</td>
+              </tr>
+              <tr>
+                <th scope="row">Salas/Horarios</th>
+                <td>EB-202 | Martes - 11:30 Hrs</td>
+              </tr>
+            </tbody> -->
+          </table>
+        </div>
+        <div class="m-0 row justify-content-center" id="horario">
+          <div class="col-auto p-5 text-center">
+            <button class="btn btn-primary " type="submit">Generar horario
+              semanal</button>
+            <button class="btn btn-primary " type="submit">Avance Curricular</button>
+            <button class="btn btn-primary " type="submit">Historia Académica
+              (PDF)</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    
+  </main>
+
+  <footer>
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>UNIVERSIDAD CATOLICA DE TEMUCO
+          </h6>
+          <p>
+            Somos la Universidad Católica de Temuco. 
+                    Institución de Educación Superior Acreditada perteneciente al Cruch con más de 60 años de tradición y compromiso público.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+      
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Rudecindo Ortega 2950, Temuco, Araucanía
+          </p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> (45) 220 5205</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="#">campuct.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+<script src="script_infoA.js"></script>
+</body>
+
+
+</html>
