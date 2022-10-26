@@ -16,13 +16,8 @@
 
 
     #navText{
-      color: white;
-      font-size: 20px;
-      padding-right: 450px;
-       
+        color: white;
     } 
-
-
     #nave{
       background: rgba(22,38,55,1);
       border-left: solid 20px #EDC500;
@@ -34,43 +29,30 @@
   
   
   </style>
-  <header>
-    <nav class="navbar t shadow" id="nave">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <a class="navbar-brand">
-              <img  style="width:200px;" id="logNav" src="logoUni.png" alt="Bootstrap">  
-            </a>
+      <header>
+        <nav class="navbar t shadow" id="nave">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <a class="navbar-brand">
+                          <img  style="width:200px;" id="logNav" src="logoUni.png" alt="Bootstrap">        
+                      </a>
+                  </div>
+                  <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8 row justify-content-center" style="margin-bottom: 10px;">
+                      <h6 style="text-align: center;" id="navText">Bienvenido a Computer Area Multipropuse Page</h6>
+                      <ul class="nav nav-pills col-auto gap-2" id="navy" >
+                        <li class="nav-item"><a href="file:///C:/Users/alexi/Desktop/camp/Computer-area-multipurpose-page-main/Menu%20Estudiante/code.html" class="nav-link active " aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Informacion Académica</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Menu Estudiante</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Notas parciales</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Menu</a></li>
+                      </ul>
+                  </div >
+              </div>
           </div>
-        </div>
-        <div class="row">
-          <h6 id="navText">Bienvenido a Computer Area Multipropuse Page</h6>
-        </div>
-
-      </div>
-      
-    </nav>
-
-    <div class="my-1" style="text-align: center;">  
-      
-      <a class="btn btn-primary" href="../code.html" role="button">Menu</a>
-      <a class="btn btn-primary" href="../informacion_acad/info_academica.html" role="button">Inf. Académica</a>
-      <a class="btn btn-primary" href="../notas_Parciales/NPAR.html" role="button">Not. y asistencia</a>
-      <a class="btn btn-primary" href="../certificacion_academica/index.html" role="button">Cert. académico</a>
-      <a class="btn btn-primary" href="#" role="button">Sol. Nota P</a>
-      <a class="btn btn-primary" href="../solicitudes/SolicitudEstudiantil.html" role="button">Sol. Estudiante</a>
-      <a class="btn btn-primary" href="../documentos/documentos.html" role="button">Documentos</a>
-      <a class="btn btn-primary" href="../cuenta_Corriente/cuentCorr.html" role="button">Cuent. Corriente</a>
-        
-    </div>
+        </nav>
   
-  </header>
-
-  
-  
-
-  
+      </header>
   <main>
     <br>
     <br>
@@ -89,15 +71,15 @@
               <div class="conteiner row">
                 <div class="col">
                   <h5 class="card-title">Nombre del Alumno</h5>
-                  <p class="card-text">Pipo ramirez gonzales</p>
+                  <p class="card-text" id="nombre_a"></p>
                 </div>
                 <div class="col">
                   <h5 class="card-title">Rut del Alumno</h5>
-                  <p class="card-text">12.345.678-0</p>
+                  <p class="card-text" id="rut_a"></p>
                 </div>
                 <div class="col">
                   <h5 class="card-title">Correo</h5>
-                  <p class="card-text">abcde@gmail.com</p>
+                  <p class="card-text" id="correo_a"></p>
                 </div>
               </div>
             </div>
@@ -113,30 +95,30 @@
               <div class="conteiner row">
                 <div class="col-md-6" id="nombre_carre">
                   <h5 class="card-title">Nombre de la carrera</h5>
-                  <p class="card-text">Ingenieria civil informática</p>
+                  <p class="card-text" id="nombre_c"></p>
                 </div>
                 <div class="col-md-6">
                   <h5 class="card-title">Id de carrera</h5>
-                  <p class="card-text">154</p>
+                  <p class="card-text" id="id_c"></p>
                 </div>
               </div>
               <br>
               <div class="conteiner row">
                 <div class="col-md-3" id="nombre_carre">
                   <h5 class="card-title">Plan</h5>
-                  <p class="card-text">3</p>
+                  <p class="card-text" id="plan"></p>
                 </div>
                 <div class="col-md-3">
                   <h5 class="card-title">Ingreso</h5>
-                  <p class="card-text">2022</p>
+                  <p class="card-text" id="ingreso"></p>
                 </div>
                 <div class="col-md-3">
                   <h5 class="card-title">Registro</h5>
-                  <p class="card-text">2022011775</p>
+                  <p class="card-text" id="registro"></p>
                 </div>
                 <div class="col-md-3">
                   <h5 class="card-title">Situacion</h5>
-                  <p class="card-text">Regular</p>
+                  <p class="card-text" id="situacion"></p>
                 </div>
               </div>
             </div>
@@ -146,11 +128,11 @@
         <div class="row justify-content-center">
           <h4 class="title " style="text-align:center"> Cursos</h4>
           <p class="" style="text-align:center">Seleccione el Curso para mas información</p>
-          <div class="shadow list-group" style="width: 90%;">
-            <a href="" class="list-group-item list-group-item-action">Curso 1</a>
+          <div class="shadow list-group" style="width: 90%;" id="cursos">
+            <!-- <a href="" class="list-group-item list-group-item-action">Curso 1</a>
             <a href="" class="list-group-item list-group-item-action">Curso 2</a>
             <a href="" class="list-group-item list-group-item-action">Curso 3</a>
-            <a href="" class="list-group-item list-group-item-action">Curso 4</a>
+            <a href="" class="list-group-item list-group-item-action">Curso 4</a> -->
           </div>
         </div>
 
@@ -159,11 +141,11 @@
         <h4 style="text-align:center;">Informacion del Curso</h4>
         <div class="shadow col-12 row justify-content-center">
           <br>
-          <table class=" table mb-3 col-12 " id="tabla">
-            <tbody>
+          <table class=" table mb-3 col-12 " id="tabla_c">
+            <!-- <tbody>
               <tr>
                 <th scope="row">Año</th>
-                <td>2022</td>
+                <td id="año">2022</td>
               </tr>
               <tr>
                 <th scope="row">Semestre</th>
@@ -193,7 +175,7 @@
                 <th scope="row">Salas/Horarios</th>
                 <td>EB-202 | Martes - 11:30 Hrs</td>
               </tr>
-            </tbody>
+            </tbody> -->
           </table>
         </div>
         <div class="m-0 row justify-content-center" id="horario">
@@ -272,6 +254,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
+
+<script src="script_infoA.js"></script>
 </body>
+
 
 </html>
