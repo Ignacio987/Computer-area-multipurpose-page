@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>C A M P - Adm General</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    
+    <style>
+
+        #navText{
+
+            text-align: center;
+            width: 750px;
+            font-size: 20px;
+
+        }
+
+      
+
+    </style>
+
+
+    
+    <body>
+
+        <header>
+            <nav class="navbar t shadow" id="nave">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                            <a class="navbar-brand">
+                                <img  style="width:200px;" id="logNav" src="imagenes/logoUni.png" alt="Logo de la uct">        
+                            </a>
+                        </div>
+                        <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8 row justify-content-center">
+                            <h6 class="my-3" id="navText">Computer Area Multipropuse Page Administration</h6>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            
+            <div class="container">
+                
+                <div class="my-2 row">
+
+                    <div class= "col-md-8" style="text-align: center; width: 2000px;">
+                        <a style="width:150px;" class="btn btn-primary" href="#" role="button">Cal y asistencia</a>
+                        <a style="width:130px;" class="btn btn-primary" href="#" role="button">Adm General</a>
+                        <a style="width:210px;" class="btn btn-primary" href="#" role="button">Buscar alumno en sistema</a>
+                    </div>
+                </div class="row">
+            </div>
+
+        </header>
+        
+        <br><br>
+
+        <h1 style="text-align:center"> Buscar alumno en el sistema</h1>
+        
+        <div class="container mt-5">
+            <input type="text" id="formulario" class="form-control my-2 border-warning shadow-none">
+            
+            <ul id="resultado">
+                <li></li>
+            </ul>
+        </div>
+
+        <br><br><hr>
+
+        <script>
+
+            //Buscar alumno
+
+            const alumnos = [
+                {nombre: "Juan Martinez", rut:" 21.524.067-3", seccion: 2, Fecha_De_ingreso: "26/06/2022"},
+                {nombre: "Catalina Gabarri", rut:" 21.524.067-3", seccion: 3, Fecha_De_ingreso: "26/06/2022"},
+                {nombre: "Jone Ribes", rut:" 21.524.067-3", seccion: 2, Fecha_De_ingreso: "26/06/2022"},
+                {nombre: "Marcial Gonzalez", rut:" 21.524.067-3", seccion: 1, Fecha_De_ingreso: "26/06/2022"},
+                {nombre: "Sara Arevalo", rut:" 21.524.067-3", seccion: 3, Fecha_De_ingreso: "26/06/2022"},
+                {nombre: "Elizabeth Vegas", rut:" 21.524.067-3", seccion: 2, Fecha_De_ingreso: "26/06/2022"},
+            ]
+
+            const formulario = document.querySelector('#formulario')
+            const boton = document.querySelector('#boton')
+            const resultado = document.querySelector('#resultado')
+            const filtrar = ()=>{
+                //console.log(formulario.value);
+                
+                resultado.innerHTML='';
+
+                const texto = formulario.value.toLowerCase();
+
+
+                for(let alumno of alumnos){
+                    let nombre = alumno.nombre.toLowerCase();
+                    if(nombre.indexOf(texto) !== -1){
+                        resultado.innerHTML += `
+                        <li>${alumno.nombre} - Rut: ${alumno.rut} - Seccion: ${alumno.seccion} - Fecha de ingreso: ${"26/06/2022"}</li>
+                    `
+                    }
+                }
+                if (resultado.innerHTML == ''){
+                    resultado.innerHTML += `
+                        <li>No se a encontrado el alumno</li>
+                    `
+                }
+            }
+
+            formulario.addEventListener('keyup', filtrar)
+
+            filtrar();
+        </script>
+    </body>
+
+</html>
+
+
