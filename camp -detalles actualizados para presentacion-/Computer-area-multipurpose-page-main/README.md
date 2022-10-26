@@ -1,1 +1,0 @@
-# Computer-area-multipurpose-page
