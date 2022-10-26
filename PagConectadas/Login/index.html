@@ -18,33 +18,35 @@
         <div class="text-center fs-1 fw-bold">
             Iniciar Sesión
         </div>
-        <div class="input-group mt-4">
-            <!--imagen e input del rut-->
-            <div class="input-group-text bg-info">
-                <img src="./imagenes/icons8-username-48.png" alt="icono del rut" style="height: 2rem ;">
+        <form action="validar.php" method="post">
+            <div class="input-group mt-4">
+                <!--imagen e input del rut-->
+                <div class="input-group-text bg-info">
+                    <img src="./imagenes/icons8-username-48.png" alt="icono del rut" style="height: 2rem ;">
+                </div>
+                <input class="form-control" type="text" placeholder="ingrese rut sin puntos ni guión" name="user">
             </div>
-            <input class="form-control" type="text" placeholder="ingrese rut sin puntos ni guión">
-        </div>
-        <div class="input-group mt-1">
-            <!--imagen e input de la contraseña-->
-            <div class="input-group-text bg-info">
-                <img src="./imagenes/icons8-sign-in-form-password-48.png" alt="icono de la contraseña" style="height: 2rem ;">
+            <div class="input-group mt-1">
+                <!--imagen e input de la contraseña-->
+                <div class="input-group-text bg-info">
+                    <img src="./imagenes/icons8-sign-in-form-password-48.png" alt="icono de la contraseña" style="height: 2rem ;">
+                </div>
+                <input class="form-control" type="password" placeholder="ingrese su contraseña" name="password">
             </div>
-            <input class="form-control" type="password" placeholder="ingrese su contraseña">
-        </div>
-        <div class="d-flex justify-content-aroud mt-1">
-            <!--checkbox para recordar datos-->
-            <div class="d-flex align-items-center gap-1">
-                <input class="form-check-input" type="checkbox">
-                <div style="font-size: 0.9rem ;" class="pt-1">
-                    Recordar
+            <div class="d-flex justify-content-aroud mt-1">
+                <!--checkbox para recordar datos-->
+                <div class="d-flex align-items-center gap-1">
+                    <input class="form-check-input" type="checkbox">
+                    <div style="font-size: 0.9rem ;" class="pt-1">
+                        Recordar
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--botón para entrar a la página-->
-        <div class="btn btn-info text-white w-100 mt-4">
-            Entrar
-        </div>
+            <!--botón para entrar a la página-->
+            <div>
+                <input class="btn btn-info text-white w-100 mt-4" type="submit" value="Entrar">
+            </div>
+        </form>
         <!--link para el cambio de contraseña-->
         <div class="d-flex  justify-content-center mt-1">
             <a href="#" class="text-decoration-none text-info">Cambiar contraseña</a>
@@ -100,6 +102,5 @@
             <a href="#" class="text-decoration-none text-info">Recuperar contraseña </a>
         </div>
     </div>
-    
 </body>
 </html>

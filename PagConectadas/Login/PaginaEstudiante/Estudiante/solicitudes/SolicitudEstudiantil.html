@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud Estudiantil</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+  <style>
+
+
+
+    #navText{
+        color: white;
+    } 
+    #nave{
+      background: rgba(22,38,55,1);
+      border-left: solid 20px #EDC500;
+    }
+    #navy a{
+      color: white;
+    }
+    
+  
+  
+  </style>
+      <header>
+        <nav class="navbar t shadow" id="nave">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <a class="navbar-brand">
+                          <img  style="width:200px;" id="logNav" src="../imagenes/logoUni.png" alt="Bootstrap">        
+                      </a>
+                  </div>
+                  <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8 row justify-content-center" style="margin-bottom: 10px;">
+                      <h6 style="text-align: center;" id="navText">Bienvenido a Computer Area Multipropuse Page</h6>
+                      <ul class="nav nav-pills col-auto gap-2" id="navy" >
+                        <li class="nav-item"><a href="file:///C:/Users/alexi/Desktop/camp/Computer-area-multipurpose-page-main/Menu%20Estudiante/code.html" class="nav-link active " aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Informacion Académica</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Menu Estudiante</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Notas parciales</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Menu</a></li>
+                      </ul>
+                  </div >
+              </div>
+          </div>
+        </nav>
+  
+      </header>
+  <br>
+  <br>
+  <div class="container" id="main">
+    <div class="row">
+      <h1>Solicitudes Estudiantiles</h1>
+    </div>
+    <div>
+      <p>
+        El portal de Solicitudes Estudiantiles está dedicado a alumnos que requieran de los servicios de <b>suspensión y renuncia académica</b>
+        . <br>
+        en esta sección encontrarás los formularios correspondientes para llevar a cabo la solicitud. Para visualizar el contenido solo se debe hacer click sobre
+        el titulo que sea de su interés, el cual desplegará el formulario o la infromación relevante sobre la solicitud que desee pedir.
+      </p>
+    </div>
+    <br>
+    <div>
+      <h5>Seleccione el tipo de solicitud de su interés</h5>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <h6>Renuncia</h6>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>
+              <h6>Formulario ingreso solicitud:</h6> 
+
+              Tipo de solicitud: Renuncia <br>
+              <div class="form-group" class="col-2">
+                <label for="select1"> <h6>Seleccione el semestre</h6></label><br>
+                <select  name="select1" id="select1" class="form-control" >
+                    <option value="--Seleccionar--">--Seleccionar--</option>
+                    <option value="Primer semestre">Primer semestre</option>
+                    <option value="Segundo semestre">Segundo semestre</option>
+                </select> <br>
+              </div>
+              <div class="form-group" class="col-2">
+                <label for="select2"> <h6>Seleccione el año</h6></label><br>
+                <select  name="select2" id="select2" class="form-control" >
+                    <option value="--Seleccionar--">--Seleccionar--</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select> <br>
+              </div>
+              <div class="form-group" class="col-2">
+                <label for="select3"> <h6>Seleccione el motivo</h6></label><br>
+                <select  name="select3" id="select3" class="form-control" >
+                    <option value="--Seleccionar--">--Seleccionar--</option>
+                    <option value="Académico">Académico</option>
+                    <option value="Cambio de Universidad">Cambio de Universidad</option>
+                    <option value="Cambio interno UCT">Cambio interno UCT</option>
+                    <option value="Disconformidad carrera">Disconformidad carrera</option>
+                    <option value="Disconformidad Universidad">Disconformidad Universidad</option>
+                    <option value="Económico">Económico</option>
+                    <option value="Familia">Familia</option>
+                    <option value="Traslado">Traslado</option>
+                    <option value="Vocación">Vocación</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Otro">Otro</option>
+                </select> <br>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"><h6>Descripción del motivo</h6></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Describa brevemente el motivo de la solicitud"></textarea> <br>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary" style="float: Right;" >Enviar</button> <br>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <h6>suspensión (Fuera de plazo)</h6>
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>
+              La información presentre a continuación es relevante solo para quienes desee suspender beneficios de arancel MINEDUC. <br>
+              En caso de no poder optar al formulario se debe a que está fuera del plazo de esta misma, diríjase a DARA para mas información. <br>
+              Gracias por su comprensión. <br>
+              <br>
+              <b>Estimados Estudiantes:</b><br>
+              <br>
+              
+              Junto con saludar, informamos que desde el <b> 02 de Agosto hasta el 29 de Septiembre </b> se encuentra habilitado el <b> proceso de suspensión de
+              Beneficios Estudiantiles MINEDUC.</b><br>
+              <br>
+              SI realizaste suspensión o renuncia académica y cuentas con Gratuidad, Beca de arancel o Fondo Solidario de Crédito Universitario (FSCU)
+              debes ingresar al siguiente link <a href="https://forms.gle/LyZ3ZygrS3TEAQjG8" target="_blank">https://forms.gle/LyZ3ZygrS3TEAQjG8</a> y completar el formulario online para solicitar la suspensión de tu
+              beneficio, al que podrás ingresar solo a través de tu correo electrónico institucional (IMPORTANTE: de no ingresar con el correo institucional no podrá ingresar al formulario). <br>
+              <br>
+              Descarga <a href="https://estudiantes.uct.cl/documentos/INSTRUCTIVO_SUSPENSJON_BENEFICIOS_ESTUDIANTES.pdf" target="_blank">AQUÍ</a> el instructivo del proceso de suspensión de Beneficios Estudiantes. <br>
+              <br>
+              <b>Respecto a la carga de documentos en formato PDF, debes considerar lo siguiente:</b><br>
+              <br>
+              1. Formulario suspensiones: Solo lo debes cargar en caso de contar con Beca de arancel.
+              Se exime de esta obligación a los estudiantes que tengan Gratuidad. <br>
+              <br>
+              2. Documento de respaldo para acreditar motivo de suspensión: Solo lo debes cargar en caso de contar con Gratuidad
+              o Becas de arancel, toda vez que las suspensiones totales desde el año de asignación del beneficio a la fecha (incluyendo solicitud actual)
+              sean superiores a 02 semestres académicos. Se exime de esta obligación a los estudiantes que tengan FSCU. <br>
+              <br>
+              <b>*EL PROCESO DE SUSPENSIÓN ES DE EXCLUSIVA RESPONSABILIDAD DEL ESTUDIANTE*</b> 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <h6>Suspensión (Dentro de plazo)</h6> 
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>
+              <h6>Formulario ingreso solicitud:</h6> 
+
+              Tipo de solicitud: Suspensión <br>
+              <div class="form-group" class="col-2">
+                <label for="select1"> <h6>Seleccione el tipo de Beneficio</h6></label><br>
+                <select  name="select1" id="select1" class="form-control" >
+                    <option value="--Seleccionar--">--Seleccionar--</option>
+                    <option value="Créditos internos">Créditos internos</option>
+                    <option value="Beca Deportiva">Beca Deportiva</option>
+                    <option value="Beca Matrícula de Honor">Beca Matrícula de Honor</option>
+                    <option value="Beca Jardín infantil">Beca Jardín infantil</option>
+                    <option value="Beca Funcionario">Beca Funcionario</option>
+                    <option value="Beca Personal consagrado">Beca Personal consagrado</option>
+                </select> <br>
+              </div>
+              <div class="form-group" class="col-2">
+                <label for="select2"> <h6>Seleccione el semestre</h6></label><br>
+                <select  name="select2" id="select2" class="form-control" >
+                    <option value="--Seleccionar--">--Seleccionar--</option>
+                    <option value="Primer semestre">Primer semestre</option>
+                    <option value="Segundo semestre">Segundo semestre</option>
+                </select> <br>
+              </div>
+              <div class="form-group" class="col-2">
+                <label for="select3"> <h6>Seleccione el año</h6></label><br>
+                <select  name="select3" id="select3" class="form-control" >
+                    <option value="--Seleccionar--">--Seleccionar--</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select> <br>
+              </div>
+              <div class="form-group" class="col-2">
+                <label for="select4"> <h6>Seleccione el motivo</h6></label><br>
+                <select  name="select4" id="select4" class="form-control" >
+                    <option value="--Seleccionar--">--Seleccionar--</option>
+                    <option value="Académico">Académico</option>
+                    <option value="Cambio de Universidad">Cambio de Universidad</option>
+                    <option value="Cambio interno UCT">Cambio interno UCT</option>
+                    <option value="Disconformidad carrera">Disconformidad carrera</option>
+                    <option value="Disconformidad Universidad">Disconformidad Universidad</option>
+                    <option value="Económico">Económico</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Otro">Otro</option>
+                </select> <br>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"><h6>Descripción del motivo</h6></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Describa brevemente el motivo de la solicitud"></textarea> <br>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary" style="float: Right;" >Enviar</button> <br>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <br>
+    <br>
+    <!-- Section: Social media -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>UNIVERSIDAD CATOLICA DE TEMUCO
+            </h6>
+            <p>
+              Somos la Universidad Católica de Temuco. 
+                      Institución de Educación Superior Acreditada perteneciente al Cruch con más de 60 años de tradición y compromiso público.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+        
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Rudecindo Ortega 2950, Temuco, Araucanía
+            </p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> (45) 220 5205</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="#">campuct.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
