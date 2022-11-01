@@ -87,3 +87,9 @@ main{
   background-color: white !important;
   border: transparent !important;
 }
+
+#t-body  {
+  width: 100%;
+  text-align: left ;
+  
+}
