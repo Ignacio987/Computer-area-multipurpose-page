@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMP: Calificaciones y Asistencia</title>
+    <link rel="stylesheet" href="certificacion_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+  <style>
+
+
+
+    #navText{
+        color: white;
+    } 
+    #nave{
+      background: rgba(22,38,55,1);
+      border-left: solid 20px #EDC500;
+    }
+    #navy a{
+      color: white;
+    }
+    
+  
+  
+  </style>
+      <header>
+        <nav class="navbar t shadow" id="nave">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <a class="navbar-brand">
+                          <img  style="width:200px;" id="logNav" src="../imagenes/logoUni.png" alt="Bootstrap">        
+                      </a>
+                  </div>
+                  <div class= "col-sm-12 col-md-8 col-lg-8 col-xl-8 row justify-content-center" style="margin-bottom: 10px;">
+                      <h6 style="text-align: center;" id="navText">Bienvenido a Computer Area Multipropuse Page</h6>
+                      <ul class="nav nav-pills col-auto gap-2" id="navy" >
+                        <li class="nav-item"><a href="file:///C:/Users/alexi/Desktop/camp/Computer-area-multipurpose-page-main/Menu%20Estudiante/code.html" class="nav-link active " aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Informacion Académica</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Menu Estudiante</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Notas parciales</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Menu</a></li>
+                      </ul>
+                  </div >
+              </div>
+          </div>
+        </nav>
+  
+      </header>
+    <main>
+        <br><br>
+        <h1 style="text-align:center ;">Obtén tu Certificado Académico</h1>
+        <br>
+        
+        <div class="container">
+            <p>Un certificado Académico es un certificado adicional al de tu título, de carácter electivo e 
+                interdisciplinario. Este es un documento oficial, opcional y complementario a la formación, relacionado 
+                con lineamientos tematicos afines a tu perfil de egreso, y aborda las competencias genéricas identitarias 
+                de nuestra institucion.
+            </p>
+        </div>
+        <br>
+        <h3 style="text-align:center ;">Requisitos</h3>
+        <div class=" container">
+                        <ul>
+                            <li>Cursar y Aprobar 4 Electivos</li>
+                            <li>Dentro de estos cuatro electivos, cursar el prioritario del certificado</li>
+                        </ul>
+        </div><br><br>
+        <div class="container">
+            <h3 style="text-align:center ;">Certificados y electivos</h3>
+            <div class="row ">
+                <div class="btn col shadow" style="margin:30px ;">Cert1</div>
+                <div class="btn col shadow " style="margin:30px ;">Cert2</div>
+                <div class="btn col shadow" style="margin:30px ;">Cert3</div>
+                <div class="btn col shadow" style="margin:30px ;">Cert4</div>
+            </div>
+        </div>
+        <br>
+        <h4 style="text-align:center ;">Cert1</h4>
+        <div class="container tabla" >
+            <table class="table">
+                <thead>
+                    <th>Sigla</th>
+                    <th>Nombre</th>
+                    <th>Tipo de Curso</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>xxxxx</td>
+                        <td>Cartografía francesa</td>
+                        <td>Obligatorio</td>    
+                    </tr>
+                    <tr>
+                        <td>xxxx2</td>
+                        <td>Cartografía francesa 2</td>
+                        <td>opcional</td>    
+                    </tr>
+                    <tr>
+                        <td>xxxx3</td>
+                        <td>Cartografía francesa 3</td>
+                        <td>opcional</td>    
+                    </tr>
+                    <tr>
+                        <td>xxxx4</td>
+                        <td>Cartografía francesa 4</td>
+                        <td>opcional</td>    
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <center>
+          <div class="container">
+            <h4 >Video de ayuda</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ChVfPeU6ZiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </center>
+        <br><br>
+        <h3 style="text-align:center ;">Mis Solicitudes</h3>
+        <div class="container tabla">
+          <table class="table">
+            <thead>
+              <th> codigo solicitud</th>
+              <th> nombre solicitud</th>
+              <th> estado solicitud</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>23112</td>
+                <td>Cert1</td>
+                <td>En proceso</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br><br>
+        <h3 style="text-align:center ;"> Nueva solicitud</h3>
+        <br>
+        <center class="container">
+          <form class="form  " action="" >
+            <div class="dropdown" style="width: 80%;">
+              <button style="width: 80%;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Certificados disponibles
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 80%;"> 
+                <li><a class="dropdown-item" href="#">Cert1</a></li>
+                <li><a class="dropdown-item" href="#">Cert2</a></li>
+                <li><a class="dropdown-item" href="#">Cert3</a></li>
+              </ul>
+            </div>
+            
+            <input class="btn btn-primary " type="submit" style="width: 20%px; margin-top: 150px;" value="Solicitar">
+          </form>
+        </center>
+
+        <br><br>
+    </main>
+    <script src="certificacion_script.js"></script>
+
+    
+      <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <br>
+    <br>
+    <!-- Section: Social media -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>UNIVERSIDAD CATOLICA DE TEMUCO
+            </h6>
+            <p>
+              Somos la Universidad Católica de Temuco. 
+                      Institución de Educación Superior Acreditada perteneciente al Cruch con más de 60 años de tradición y compromiso público.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+        
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Rudecindo Ortega 2950, Temuco, Araucanía
+            </p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> (45) 220 5205</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="#">campuct.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+</html>
