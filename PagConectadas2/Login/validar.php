@@ -11,20 +11,21 @@ $consulta = "SELECT * FROM usuarios where rut ='$usuario' and contrasenia ='$con
 
 $result = mysqli_query($conexion, $consulta);
 
-$filas = mysqli_fetch_array($result);
+$filas = mysqli_num_rows($result);
+$cargo = mysqli_fetch_array($result);
 
-if($filas["id_cargo"] == 1){
+if( $filas && $cargo["id_cargo"] == 1){
     header("location:PaginaEstudiante/code.html");
 
-}else if ($filas["id_cargo"] == 2){
+}else if ($filas && $cargo["id_cargo"] == 2){
     header("location:PaginaProfesor/calif.html");
 
-}else if ($filas["id_cargo"] != 1 && 2){
+}else{
     ?>
     <?php
     include("index.html");
     ?>
-    <div >
+    <div style="color: white; text-align:center; padding:20px;">
         <h3>error!</h3>
         <p>ingrese los datos correctamente.</p>
     </div>
