@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body class="bg-info d-flex justify-content-center align-items-center vh-100">
+    <!--INICIO DE SESION-->
+
+    <div class="bg-white p-5 rounded-5 text-secondary" style="width:25rem ;">
+        <!--Imagen de estudiantes sobre el texto de incio de sesión-->
+        <div class="d-flex justify-content-center">
+            <img src="./imagenes/candado.png" alt="icono de login" style="height: 6rem ;">
+        </div>
+        <div class="text-center fs-1 fw-bold">
+            Recuperar Contraseña
+        </div>
+        <form action="#" method="POST">
+            <div class="input-group mt-4">
+                <!--imagen e input del rut-->
+                <div class="input-group-text bg-info">
+                    <img src="./imagenes/correo-electronico.png" alt="icono del correo" style="height: 2rem ;">
+                </div>
+                <input class="form-control" type="email" placeholder="ingrese su correo institucional" name="correo">
+            </div>
+            <div class="d-flex justify-content-aroud mt-1">
+                <!--checkbox para recordar datos-->
+                <div class="d-flex align-items-center gap-1">
+                    <input class="form-check-input" type="checkbox">
+                    <div style="font-size: 0.9rem ;" class="pt-1">
+                        Recordar
+                    </div>
+                </div>
+            </div>
+            <!--botón para entrar a la página-->
+            <div>
+                <input class="btn btn-info text-white w-100 mt-4" type="submit" value="Enviar">
+            </div>
+        </form>
+        <!--link para el cambio de contraseña-->
+        <div class="d-flex  justify-content-center mt-1">
+            <a href="./index.html" class="text-decoration-none text-info">Volver al login</a>
+        </div>
+    </div>
+</body>
+</html>
