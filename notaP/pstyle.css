@@ -1,0 +1,16 @@
+body{
+    
+    background-image: url("../imagenes/Logo_chico.webp"),linear-gradient(0deg, rgba(96,210,210,0.40238093528427) 0%, rgba(255,255,255,1) 100%) !important;
+
+    
+    
+    color:black;
+  }
+
+  .table{
+    background:rgb(221, 242, 242);
+    
+    border: solid 1px #ffffff  !important;
+    
+  
+  }
