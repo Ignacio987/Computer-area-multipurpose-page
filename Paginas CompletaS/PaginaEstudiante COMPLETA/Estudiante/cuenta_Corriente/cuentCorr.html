@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C A M P - Cuenta Corriente</title>
+    <!--Se llama al cdn de css, este nos permite ingresar estilos de bootstrap (en este caso como solo esta descargado, se pone la ruta ded acceso)-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS -->
+
+    <style>
+
+      @font-face {
+        font-family: "contrax";
+        src: url(Fuentes/contrax.ttf);
+      }
+
+      #textNot{
+
+      font-family: "contrax";
+      text-align: center;
+
+      }
+
+    </style>
+
+
+  </head>
+
+
+
+
+  <body>
+
+    <style>
+
+
+
+      #navText{
+        color: white;
+        font-size: 20px;
+        padding-right: 450px;
+      } 
+      #nave{
+        background: rgba(22,38,55,1);
+        border-left: solid 20px #EDC500;
+      }
+      #navy a{
+        color: white;
+      }
+        
+      
+      
+    </style>
+    <header>
+      <nav class="navbar t shadow" id="nave">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+              <a class="navbar-brand">
+                <img  style="width:200px;" id="logNav" src="../imagenes/logoUni.png" alt="Bootstrap">        
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <h6 id="navText">Computer Area Multipropuse Page</h6>
+          </div>  
+        </div>
+      </nav>
+
+      <div class="my-1" style="text-align: center;">  
+      
+        <a class="btn btn-primary" href="../code.html" role="button">Menu</a>
+        <a class="btn btn-primary" href="../informacion_acad/index.html" role="button">Inf. Académica</a>
+        <a class="btn btn-primary" href="../notas_Parciales/NPAR.html" role="button">Not. y asistencia</a>
+        <a class="btn btn-primary" href="../certificacion_academica/index.html" role="button">Cert. académico</a>
+        <a class="btn btn-primary" href="../notaP/SolicitudEstudiantil.html" role="button">Sol. Nota P</a>
+        <a class="btn btn-primary" href="../solicitudes/SolicitudEstudiantil.html" role="button">Sol. Estudiante</a>
+        <a class="btn btn-primary" href="../documentos/documentos.html" role="button">Documentos</a>
+        <a class="btn btn-primary" href="../cuenta_Corriente/cuentCorr.html" role="button">Cuent. Corriente</a>
+          
+      </div>  
+    </header>
+        
+        
+
+      <!--Clase container, nos permite tener un espacio a los laterales, la informacfión irá un poco más centrada-->
+      <div class = "container my-5">
+
+        <!--Fila que permite la escritura del título-->
+        <div class = "row">
+          <h1 id="textNot">Cuenta Corriente</h1>
+        </div>
+            
+          <!--acordeón main, permite tener las 2 barras del acordeón dentro-->
+
+        <div class="table-responsive my-5">
+          <table class ="table">
+            <thead>
+              <tr>
+
+                <th>Nombre del estudiante</th>
+                <th>Rut</th>
+                <th>Año de ingreso</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>Pedro Sanches</td>
+                <td>21.524.067-3</td>
+                <td>2022</td>
+              </tr>
+                
+            </tbody>
+
+          </table>
+        </div>
+
+        <div class="row">
+                            
+          <p class="mx-3">Ingrese el metodo de pago deseado</p>
+                
+          <div class="dropdown" >
+            <button class="btn btn-secondary dropdown-toggle mx-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ingresar aquí
+            </button>
+            <ul class="dropdown-menu"> 
+              <li><a class="dropdown-item" href="#">Crédito</a></li>
+              <li><a class="dropdown-item" href="#">Débito</a></li>
+              <li><a class="dropdown-item" href="#">Prepago</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+          <!-- Cuenta Corriente -->
+
+        <div class="accordion my-5">
+          <div class="accordion-item">
+            <h2 class="accordion-header" >
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Cuenta Corriente
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+
+                <p>En esta sección podras consultar el estado de tu cuenta corriente.</p>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>Seleccione un estado</h6>
+
+                    <div class="btn-group" role="group" > 
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                          Elija un estado
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Todos</a></li>
+                          <li><a class="dropdown-item" href="#">Vigentes</a></li>
+                          <li><a class="dropdown-item" href="#">Pagados</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <h6>Seleccione un concepto</h6>
+
+                    <div class="btn-group" role="group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                        Elija un estado
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                      </ul>
+                    </div>
+
+                    <button type="button" class="mx-4 btn btn-primary">Filtrar Datos</button>
+                      
+                  </div>
+
+                </div> <!-- Cierre de div "columna" -->
+
+                <div class= "my-5">
+                  <table class ="table">
+                    <thead>
+                      <tr>
+        
+                        <th>Año-N°Cuota</th>
+                        <th>Concepto</th>
+                        <th>Valor Cuota</th>
+                        <th>Abono</th>
+                        <th>Monto a pagar</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+        
+                      </tr>
+                    </thead>
+                    <tbody>
+        
+                      <tr>
+                        <td>2022-00</td>
+                        <td>Matrícula</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                        <td>ninguno</td>
+                        <td>01/02/2022</td>
+                        <td>Pagado</td>
+                      </tr>
+
+                      <tr>
+                        <td>2022-00</td>
+                        <td>Matrícula</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                        <td>ninguno</td>
+                        <td>01/02/2022</td>
+                        <td>Pagado</td>
+                      </tr>
+
+                      <tr>
+                        <td>2022-00</td>
+                        <td>Matrícula</td>
+                        <td>$0</td>
+                        <td>$0</td>
+                        <td>ninguno</td>
+                        <td>01/02/2022</td>
+                        <td>Pagado</td>
+                      </tr>
+
+
+                        
+                    </tbody>
+        
+                  </table>
+                </div>
+                      
+
+
+              </div>
+            </div>
+          </div>
+
+            <!-- crédito Complementario -->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Crédito Complementario
+              </button>
+            </h2>
+
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+
+                <p>En esta sección podras consultar el estado de tus cuotas (PAGADA, VIGENTE) de tu crédito complementario.</p>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>Seleccione un año</h6>
+
+                    <div class="btn-group" role="group" > 
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                          Listado de años:
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Todos</a></li>
+                          <li><a class="dropdown-item" href="#">Vigentes</a></li>
+                          <li><a class="dropdown-item" href="#">Pagados</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class= "my-5">
+                  <table class ="table">
+                    <thead>
+                      <tr>
+        
+                        <th>Año</th>
+                        <th>Número</th>
+                        <th>Fecha Vcto.</th>
+                        <th>Cuota</th>
+                        <th>Estado</th>
+                              
+        
+                      </tr>
+                    </thead>
+                    <tbody>
+        
+                      <tr>
+                      <td>----</td>
+                      <td>----</td>
+                      <td>No hay datos disponibles en la tabla</td>
+                      <td>----</td>
+                      <td>----</td>
+                              
+                    </tr>
+   
+                  </tbody>
+        
+                </table>
+              </div>
+                      
+            </div>
+          </div>
+        </div>
+
+        <!-- Emisión de Documentos -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Emisión de Documentos
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <p>En esta sección encontrarás todos los Pagarés vigentes, los cuales debes imprimir y hacerlos llegar a las oficinas de cobranza en el campus correspondiente a tu carrera.</p>
+              <div class= "my-5">
+                <table class ="table">
+                  <thead>
+                    <tr>
+        
+                      <th>Año</th>
+                      <th>Número</th>
+                      <th>Fecha Vcto.</th>
+                      <th>Cuota</th>
+                      <th>Estado</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+        
+                    <tr>
+                      <td>----</td>
+                      <td>----</td>
+                      <td>No hay datos disponibles en la tabla</td>
+                      <td>----</td>
+                      <td>----</td>
+                              
+                    </tr>
+
+                  </tbody>
+        
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--Se llama al cdn de javascript, este nos permite interactuar con los botones, acordeones, etc (caso contrario al css, este no esta descargado, así que se llama a una URL para conectar via internet)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <br>
+      <br>
+      <!-- Section: Social media -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>UNIVERSIDAD CATOLICA DE TEMUCO
+              </h6>
+              <p>
+                Somos la Universidad Católica de Temuco. 
+                        Institución de Educación Superior Acreditada perteneciente al Cruch con más de 60 años de tradición y compromiso público.
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+          
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Rudecindo Ortega 2950, Temuco, Araucanía
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> (45) 220 5205</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="#">campuct.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>        
+        
+  </body>
+</html>
