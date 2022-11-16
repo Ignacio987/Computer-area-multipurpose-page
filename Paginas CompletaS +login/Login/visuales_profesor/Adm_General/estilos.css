@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url("imagenes/Logo_chico.webp"),linear-gradient(0deg, rgba(96,210,210,0.40238093528427) 0%, rgba(255,255,255,1) 1000%);
+  color:black;
+}
